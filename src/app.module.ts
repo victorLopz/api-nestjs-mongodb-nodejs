@@ -9,7 +9,7 @@ import { UsersModule } from './users/users.module';
   imports: [
     ProductsModule,
     MongooseModule.forRoot(
-      'mongodb+srv://viccast14:37U6xJ3fg36mUJ8W@cluster0.dz5htok.mongodb.net',
+      'mongodb+srv://example:password@cluster.dz5htok.mongodb.net',
     ),
     AuthModule,
     UsersModule,
