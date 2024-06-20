@@ -5,12 +5,13 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 @Module({
   imports: [
     ProductsModule,
-    MongooseModule.forRoot(
-      'mongodb+srv://example:password@cluster.dz5htok.mongodb.net',
-    ),
+    MongooseModule.forRoot(process.env.MONGODB_URI),
     AuthModule,
     UsersModule,
   ],
