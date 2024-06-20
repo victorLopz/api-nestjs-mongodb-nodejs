@@ -31,12 +31,3 @@ export class CreateProductDto {
   stockMin: number;
   comments: string;
 }
-//   code1: string;
-//   code2: string;
-//   name: string;
-//   modelOrPresentation: string;
-//   brand: string;
-//   priceSold: number;
-//   priceBought: number;
-//   stockMin: number;
-//   comments: string;
