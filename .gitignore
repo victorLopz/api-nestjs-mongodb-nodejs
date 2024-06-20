@@ -1,8 +1,6 @@
 # compiled output
 /dist
 /node_modules
-package-lock.json
-yarn.lock
 
 # Logs
 logs
@@ -17,6 +15,8 @@ lerna-debug.log*
 .DS_Store
 
 .env
+package-lock.json
+yarn.lock
 
 # Tests
 /coverage
