@@ -18,7 +18,7 @@ export class ContentService {
   }
 
   findAll() {
-    return `This action returns all content`;
+    return this.contentModel.find();
   }
 
   findOne(id: number) {
