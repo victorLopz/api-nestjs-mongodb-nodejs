@@ -36,7 +36,7 @@ export class AuthService {
     if (!user) throw new HttpException('User not found', 404);
 
     const isPasswordValid = await compare(password, user.password);
-    console.log(!isPasswordValid);
+
     if (!isPasswordValid) throw new HttpException('Password is not valid', 400);
 
     const payload = {
